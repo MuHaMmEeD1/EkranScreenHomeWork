@@ -1,0 +1,26 @@
+﻿<Window x:Class="ClientScreenShot.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ClientScreenShot"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+            
+        </Grid.RowDefinitions>
+
+        <Image x:Name="EsasImage" Grid.Row="0" Source="{Binding BT}"></Image>
+        <Button Name="StartButton" Grid.Row="1"
+                Content="Start" Click="StartButton_Click"
+                ></Button>
+        
+        
+    </Grid>
+    
+</Window>
